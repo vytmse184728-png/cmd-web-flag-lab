@@ -1,0 +1,7 @@
+services:
+  cmdapp:
+    build: .
+    environment:
+      CYBER_RANGE_FLAG: ${CYBER_RANGE_FLAG:?CYBER_RANGE_FLAG env is required}
+    ports:
+      - "8081:8081"
